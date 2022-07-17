@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img src="../img/logo.jpg" alt="Logo de Garza Bruja" class="nav__logo">
+            </a>
+            <ul class="nav__list">
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="procesocreativo.html">Proceso creativo</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main__title">Contactanos</h1>
+        <section class="form">
+            <form action="envio.php">
+                <label for="name">Nombre y apellido</label>
+                <input type="text" id="name">
+                <label for="telef">Teléfono</label>
+                <input type="text" id="telef">
+                <fieldset>
+                    <legend>Info de tu pedido</legend>
+                    <label for="cuadernos">Cuaderno/s</label>
+                    <input type="checkbox" id="cuadernos">
+                    <label for="agendas">Agenda/s</label>
+                    <input type="checkbox" id="agendas">
+                    <label for="personalizado">Personalizado</label>
+                    <input type="checkbox" id="personalizado">
+                </fieldset>
+                <fieldset>
+                    <legend>Tu ubicación</legend>
+                    <label for="localidad">Localidad</label>
+                    <select name="" id="">
+                        <option value="cordoba">Cordoba Capital</option>
+                        <option value="corcovado">Corcovado (Chubut)</option>
+                        <option value="esquel">Esquel (Chubut)</option>
+                    </select>
+                </fieldset>
+                <label for="comentario">Ingresá el código de los productos que querés comprar (los podés encontrar en <a href="productos.html" target="_blank">Productos</a>) o contanos qué tenes en mente si buscas un producto personalizado</label>
+                <textarea name="comentario" id=""></textarea>
+                <input class="form__button" type="reset" value="Cancelar">
+                <input class="form__button" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/garza.bruja/" target="_blank">
+            <img src="../img/instalogo.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/garzabruja" target="_blank">
+            <img id="face" src="../img/facelogo.png" alt="Facebook">
+        </a>
+    </footer>
+</body>
+</html>
